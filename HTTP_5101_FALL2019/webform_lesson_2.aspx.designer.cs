@@ -56,5 +56,23 @@ namespace HTTP_5101_FALL2019 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList aspx_bachelor_wishdestination;
+        
+        /// <summary>
+        /// bachelor_hobbie control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox bachelor_hobbie;
+        
+        /// <summary>
+        /// bachelor_hobby control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox bachelor_hobby;
     }
 }

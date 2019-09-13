@@ -88,6 +88,19 @@
                     </asp:CheckBoxList>
                 </section>
                 <section>
+                    <h3>What is your favourite activity?</h3>
+                    <asp:TextBox runat="server" ID="bachelor_hobbie"></asp:TextBox>
+
+                    <%
+                            /*
+                             * this is a server side comment. I need the %<> so the comment is only seen by the server
+                             */
+                            
+                    %>
+
+                    <!-- <asp:TextBox runat="server" ID="bachelor_hobby"></asp:TextBox> -->
+                </section>
+                <section>
                     <asp:Button runat="server" />
                 </section>
             </div>
