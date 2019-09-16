@@ -1,10 +1,84 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Sportcar Incident Report</title>
 </head>
 <body>
-
+    <h1>Car Incident Report</h1>
+    <form method="post" action="http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php">
+        <section>
+            <h2>Please fill out the informatio below:</h2>
+            <label for="client_fname">First Name:</label>
+            <input type="text" id="client_fname" name="client_fname" placeholder="e.g. Gavin" />
+            <label for="client_lname">Last Name:</label>
+            <input type="text" id="client_lname" name="client_lname" placeholder="e.g. Smith" />
+            <div>
+                <label for="client_email">E-mail Address:</label>
+                <input type="email" id="client_email" name="client_email" placeholder="g.smith@me.com" />   
+            </div>
+        </section>
+        <section>
+            <h2>About the incident</h2>
+            <h3>What time did the incident take place?</h3>
+            <select id="time_of_incident" name="time_of_incident">
+                <option value="midnight_to_six_am">00:01 - 06:00</option>
+                <option value="six_am_to_noon">06:01-12:00</option>
+                <option value="noon_to_six_pm">12:01-18:00</option>
+                <option value="six_pm_to_midnight">18:01-00:00</option>
+            </select>
+            <h3>How many vehicles were involved in the incident?</h3>
+            <select id="number_of_vehicles" name="number_of_vehicles">
+                <option value="one_vehicles">1</option>
+                <option value="two_vehicles">2</option>
+                <option value="three_or_more_vehicles">3+</option>
+            </select>
+            <h3>What type of vehicle was being driven when the incident happened?</h3>
+            <div>
+                <input type="radio" id="type_sedan" name="car_type" />
+                <label for="type_sedan">Sedan</label>
+            </div>
+            <div>
+                <input type="radio" id="type_suv" name="car_type" />
+                <label for="type_suv">S.U.V</label>
+            </div>
+            <div>
+                <input type="radio" id="type_crossover" name="car_type" />
+                <label for="type_crossover">Crossover</label>
+            </div>
+            <div>
+                <input type="radio" id="type_convertible" name="car_type" />
+                <label for="type_convertible">Convertible</label>
+            </div>
+            <div>
+                <input type="radio" id="type_other" name="car_type" />
+                <label for="type_other">Other</label>
+            </div>
+        </section>
+        <section>
+            <h2>More Info</h2>
+            <h3>What level is your driver's license?</h3>
+            <input type="radio" id="g1_license" name="client_license" />
+            <label for="g1_license">G1 |</label>
+            <input type="radio" id="g2_license" name="client_license" />
+            <label for="g2_license">G2 |</label>
+            <input type="radio" id="g_license" name="client_license" />
+            <label for="g_license">G</label>
+            <h3>Please select all that apply:</h3>
+            <div>
+                <input type="checkbox" id="is_citizen" name="is_citizen" />
+                <label for="is_citizen">Are you a citizen or permenant resident of this country?</label>
+            </div>
+            <div>
+                <input type="checkbox" id="had_incident" name="had_incident" />
+                <label for="had_incident">Have you been in an incident with in the last 5 years?</label>
+            </div>
+            <div>
+                <input type="checkbox" id="is_registered_under_name" name="is_registered_under_name" />
+                <label for="is_registered_under_name">Is the vehicle registered under the name stated above?</label>
+            </div>
+        </section>
+        <button type="submit" id="submit" name="submit">Submit</button>
+    </form>
 </body>
 </html>
