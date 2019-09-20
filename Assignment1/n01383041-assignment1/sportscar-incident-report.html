@@ -17,6 +17,10 @@
                 <label for="client_email">E-mail Address:</label>
                 <input type="email" id="client_email" name="client_email" placeholder="g.smith@me.com" />   
             </div>
+            <div>
+                <label for="client_phonenumber">Phone Number:</label>
+                <input type="text" id="client_phonenumber" name="client_phonenumber" placeholder="905-999-5555" />
+            </div>
         </section>
         <section>
             <h2>About the incident</h2>
@@ -76,6 +80,15 @@
             <div>
                 <input type="checkbox" id="is_registered_under_name" name="is_registered_under_name" />
                 <label for="is_registered_under_name">Is the vehicle registered under the name stated above?</label>
+            </div>
+            <h3>How would you prefer to be contacted moving forward?</h3>
+            <div>
+                <input type="checkbox" id="contact_email" name="contact_email" />
+                <label for="contact_email">By Email stated above.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="contact_phone" name="contact_phone" />
+                <label for="contact_phone">By Phone stated above.</label>
             </div>
         </section>
         <button type="submit" id="submit" name="submit">Submit</button>

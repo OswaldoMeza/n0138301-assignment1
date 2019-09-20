@@ -49,6 +49,15 @@ namespace n01383041_assignment1 {
         protected global::System.Web.UI.WebControls.TextBox aspx_client_email;
         
         /// <summary>
+        /// aspx_client_phonenumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox aspx_client_phonenumber;
+        
+        /// <summary>
         /// aspx_time_of_incident control.
         /// </summary>
         /// <remarks>
@@ -110,6 +119,15 @@ namespace n01383041_assignment1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList aspx_client_statements;
+        
+        /// <summary>
+        /// aspx_client_contact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList aspx_client_contact;
         
         /// <summary>
         /// Submit control.

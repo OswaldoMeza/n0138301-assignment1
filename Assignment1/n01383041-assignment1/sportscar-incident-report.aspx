@@ -20,6 +20,10 @@
                     <label>E-mail Address:</label>
                     <asp:TextBox runat="server" ID="aspx_client_email" placeholder="g.smith@me.com"></asp:TextBox>
                 </div>
+                <div>
+                    <label>Phone Number:</label>
+                    <asp:TextBox runat="server" ID="aspx_client_phonenumber" placeholder="905-999-5555"></asp:TextBox>
+                </div>
             </section>
             <section>
                 <h2>About the Incident</h2>
@@ -55,6 +59,11 @@
                     <asp:ListItem Text="Are you a citizen or Permenant Resident of this country?" Value="aspx_is_citizen"></asp:ListItem>
                     <asp:ListItem Text="Have you been in an incident within the last 5 years?" Value="aspx_had_incident"></asp:ListItem>
                     <asp:ListItem Text="Is the vehicle registered under the name stated above?" Value="aspx_is_registered_under_name"></asp:ListItem>
+                </asp:CheckBoxList>
+                <h3>How would you prefer to be contacted moving forward?</h3>
+                <asp:CheckBoxList runat="server" ID="aspx_client_contact">
+                    <asp:ListItem Text="By Email stated above." Value="aspx_contact_email"></asp:ListItem>
+                    <asp:ListItem Text="By Phone number stated above" Value="aspx_contact_phone"></asp:ListItem>
                 </asp:CheckBoxList>
             </section>
             <asp:Button Text="Submit" ID="Submit" runat="server" />
